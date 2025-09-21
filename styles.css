@@ -131,3 +131,24 @@ p {
 .material-symbols-outlined {
     transition: transform 0.5s;
 }
+
+#sidebar .sub-menu li a {
+    padding-left: 2em;
+}
+
+#toggle-btn {
+    margin-left: auto;
+    background: none;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+svg {
+    transition: rotate 150ms ease;
+}
+
+#toggle-btn:hover {
+    background-color: var(--hover-clr);
+}
