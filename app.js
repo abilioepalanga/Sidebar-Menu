@@ -1,4 +1,4 @@
 function toggleSubMenu(button) {
-    const subMenu = button.nextElementSibling;
-    subMenu.classList.toggle("show");
+    button.nextElementSibling.classList.toggle("show");
+    button.classList.toggle("rotate");
 }

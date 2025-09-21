@@ -123,3 +123,11 @@ h2,
 p {
     margin-top: 1em;
 }
+.rotate .material-symbols-outlined {
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+
+.material-symbols-outlined {
+    transition: transform 0.5s;
+}
