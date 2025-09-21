@@ -34,7 +34,6 @@ body {
     width: 250px;
     padding: 5px 1em;
     background-color: var(--base-clr);
-    padding: 5px 1em;
     border-right: 1px solid var(--line-clr);
 
     position: sticky;
@@ -57,11 +56,15 @@ body {
 }
 
 #sidebar .sub-menu {
-    display: none;
+    display: grid;
+    grid-template-rows: 0fr;
     transition: 300ms ease-in-out;
+    > div {
+        overflow: hidden;
+    }
 }
 #sidebar .sub-menu.show {
-    display: block;
+    grid-template-rows: 1fr;
 }
 #sidebar ul {
     list-style: none;
@@ -72,9 +75,7 @@ body {
     justify-content: flex-end;
     margin-bottom: 16px;
     .logo {
-        font-size: 1.5rem;
         font-weight: 600;
-        color: var(--accent-clr);
     }
 }
 
