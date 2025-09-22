@@ -135,7 +135,8 @@ p {
     transition: transform 0.5s;
 }
 
-.material-symbols-outlined {
+.material-symbols-outlined,
+#toggle-icon {
     transition: transform 0.5s;
 }
 
