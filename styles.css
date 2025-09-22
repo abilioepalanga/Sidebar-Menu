@@ -39,6 +39,12 @@ body {
     position: sticky;
     top: 0;
     align-self: start;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+}
+#sidebar.close {
+    padding: 5px;
+    width: 58px;
 }
 
 #sidebar svg {
