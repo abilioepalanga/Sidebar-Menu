@@ -129,7 +129,8 @@ h2,
 p {
     margin-top: 1em;
 }
-.rotate .material-symbols-outlined {
+.rotate .material-symbols-outlined,
+.rotate #toggle-icon {
     transform: rotate(180deg);
     transition: transform 0.5s;
 }
