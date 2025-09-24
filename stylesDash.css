@@ -48,8 +48,8 @@
 }
 
 .sidebar.close {
-    padding: 1px;
-    width: 8px;
+    width: 0px;
+    padding: 0;
 }
 ul {
     list-style: none;
@@ -63,4 +63,21 @@ ul li a {
     text-decoration: none;
     font-size: large;
     color: white;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    transition: background-color 300ms ease-in-out;
+    background-color: black;
+
+    svg {
+        flex-shrink: 0;
+        fill: white;
+    }
 }

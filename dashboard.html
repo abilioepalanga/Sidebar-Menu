@@ -8,12 +8,14 @@
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         />
         <link rel="stylesheet" href="stylesDash.css" />
+        <script type="text/javascript" src="appDash.js" defer></script>
+
         <title>Dashboard</title>
     </head>
     <body>
         <div class="container">
             <aside class="sidebar">
-                <i class="logo">
+                <i class="logo" onclick="toggleSidebar(this)">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="24px"
@@ -33,7 +35,7 @@
                 </ul>
             </aside>
             <main>
-                <button>
+                <button onclick="toggleSidebarOpen(this)">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="24px"
@@ -43,9 +45,16 @@
                     >
                         <path
                             d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                        /></svg
-                    >Open Sidebar
+                        />
+                    </svg>
+                    Open Sidebar
                 </button>
+
+                <h1>Collapsed Sidebar</h1>
+                <p>
+                    This is a simple dashboard layout with a collapsible
+                    sidebar. Click the button above to toggle the sidebar.
+                </p>
             </main>
         </div>
     </body>
