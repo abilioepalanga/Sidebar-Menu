@@ -81,3 +81,52 @@ button {
         fill: white;
     }
 }
+
+/* Miii Codgo */
+/* Container do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botão visível */
+.dropbtn i {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Conteúdo do dropdown (escondido por padrão) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: block; /* Esse é o segredo para colocar um abaixo do outro */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar o dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2980b9;
+}

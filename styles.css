@@ -35,7 +35,6 @@ body {
     padding: 5px 1em;
     background-color: var(--base-clr);
     border-right: 1px solid var(--line-clr);
-
     position: sticky;
     top: 0;
     align-self: start;
