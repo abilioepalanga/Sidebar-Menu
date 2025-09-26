@@ -57,6 +57,53 @@
             button:hover {
                 background-color: #21867a;
             }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 30px;
+                font-size: 16px;
+                background-color: #fff;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            th,
+            td {
+                padding: 12px 15px;
+                text-align: left;
+            }
+
+            thead {
+                background-color: #2a9d8f;
+                color: white;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #f5f5f5;
+            }
+
+            tbody tr:hover {
+                background-color: #e0f7f5;
+            }
+
+            th {
+                font-weight: bold;
+            }
+
+            td button {
+                background-color: #e76f51;
+                border: none;
+                padding: 6px 12px;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            td button:hover {
+                background-color: #d65a3a;
+            }
         </style>
     </head>
     <body>
@@ -80,6 +127,19 @@
                 />
 
                 <button type="submit">Inserir</button>
+                <br />
+                <br />
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contatos-lista"></tbody>
+                </table>
             </form>
         </div>
     </body>
