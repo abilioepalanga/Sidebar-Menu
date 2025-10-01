@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="app.js" defer></script>
+        <title>Home</title>
+    </head>
+    <body>
+        <nav id="sidebar">
+            <ul>
+                <li>
+                    <span class="logo">AEE</span>
+                    <button onclick="toggleSidebar()" id="toggle-btn">
+                        <svg
+                            id="toggle-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#1f1f1f"
+                        >
+                            <path
+                                d="M280-280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680q50 0 90.5 22t69.5 58h320q50 0 85 35t35 85q0 50-35 85t-85 35H440q-29 36-69.5 58T280-280Zm0-200Zm196 40h284q17 0 28.5-11.5T800-480q0-17-11.5-28.5T760-520H476q2 9 3 20t1 20q0 9-1 20t-3 20Zm-196 80q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"
+                            />
+                        </svg>
+                    </button>
+                </li>
+                <li class="active">
+                    <a href="index.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#1f1f1f"
+                        >
+                            <path
+                                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+                            />
+                        </svg>
+                        <span> Home </span></a
+                    >
+                </li>
+                <li class="">
+                    <a href="dashboard.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#1f1f1f"
+                        >
+                            <path
+                                d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"
+                            />
+                        </svg>
+                        <span> Dashboard </span></a
+                    >
+                </li>
+                <li>
+                    <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#1f1f1f"
+                        >
+                            <path
+                                d="M560-320h80v-80h80v-80h-80v-80h-80v80h-80v80h80v80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"
+                            />
+                        </svg>
+                        <span>Create </span>
+                        <span class="material-symbols-outlined">
+                            stat_minus_1
+                        </span>
+                    </button>
+                    <ul class="sub-menu">
+                        <div>
+                            <li><a href="#">Folder</a></li>
+                            <li><a href="#">Document</a></li>
+                            <li><a href="#">Project</a></li>
+                        </div>
+                    </ul>
+                </li>
+
+                <li>
+                    <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#1f1f1f"
+                        >
+                            <path
+                                d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z"
+                            />
+                        </svg>
+                        <span>To do list</span>
+                        <span class="material-symbols-outlined">
+                            stat_minus_1
+                        </span>
+                    </button>
+                    <ul class="sub-menu">
+                        <div>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Private</a></li>
+                            <li><a href="#">Coding</a></li>
+                            <li><a href="#">Gardening</a></li>
+                            <li><a href="#">School</a></li>
+                        </div>
+                    </ul>
+                </li>
+
+                <!---Fim dropdown-->
+                <li>
+                    <a href="calendar.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#1f1f1f"
+                        >
+                            <path
+                                d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
+                            />
+                        </svg>
+                        <span> Calendar </span></a
+                    >
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#1f1f1f"
+                        >
+                            <path
+                                d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z"
+                            />
+                        </svg>
+                        <span> Profile </span></a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <h1>Home Page</h1>
+                <p>
+                    Welcome to our website! We're glad to have you here. This is
+                    the home page where you can find the latest updates,
+                    announcements, and quick access to our most important
+                    content. Take your time to explore everything we have to
+                    offer.
+                </p>
+            </div>
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+                    We are a passionate team dedicated to delivering
+                    high-quality services and experiences. Our mission is to
+                    empower individuals and businesses through innovative
+                    solutions and personalized support. With years of experience
+                    and a strong commitment to excellence, we continue to grow
+                    and improve every day.
+                </p>
+            </div>
+            <div class="container">
+                <h2>Contact</h2>
+                <p>
+                    If you have any questions, suggestions, or feedback, we'd
+                    love to hear from you! You can reach out to us via our
+                    contact form, email, or social media channels. Our support
+                    team is available Monday to Friday, from 9:00 AM to 5:00 PM.
+                    We aim to respond within 24 hours.
+                </p>
+            </div>
+        </main>
+    </body>
+</html>
