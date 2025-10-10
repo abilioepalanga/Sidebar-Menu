@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:init": "node node_modules/tailwindcss/dist/cli.js init -p",
-    "tw:watch": "node node_modules/tailwindcss/dist/cli.js -i ./input.css -o ./tailwind.css --watch"
+    "tw:init": "tailwindcss init -p",
+    "tw:watch": "tailwindcss -i ./input.css -o ./tailwind.css --watch"
   },
   "keywords": [],
   "author": "",
