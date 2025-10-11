@@ -6,16 +6,41 @@
         <link rel="stylesheet" href="./tailwind.css" />
     </head>
     <body>
-        <h2 class="text-sm">Teste Tailwind</h2>
-        <h2 class="text-base text-right">Teste Tailwind</h2>
-        <h2 class="text-lg text-red-200">Teste Tailwind</h2>
-        <h2 class="text-xl">Teste Tailwind</h2>
-        <h2 class="text-2xl">Teste Tailwind</h2>
-        <h2 class="text-3xl text-center">Teste Tailwind</h2>
-        <h2 class="text-4xl">Teste Tailwind</h2>
+        <div class="p-4 m-4 border-2 border-blue-900">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            feugiat, nulla sed faucibus commodo, erat urna facilisis nisl, vel
+            lacinia quam justo vitae mauris. Suspendisse potenti. Nulla
+            facilisi. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Donec mattis, turpis sed vehicula
+            tincidunt, arcu risus fermentum nisl, nec eleifend neque metus a
+            justo. Aenean eget elit in elit blandit interdum. Sed id semper
+            sapien. Praesent lobortis ultrices lectus, ac eleifend leo viverra
+            in. Integer tincidunt lacus eget nisl bibendum, id vehicula urna
+            fermentum. Etiam non dui neque.
+        </div>
 
-        <p class="text-base md:text-6xl">
-            The quick brown fox jumps over the lazy dog.
-        </p>
+        <div class="p-4 m-4 flex space-x-4 border-b-4 border-red-800">
+            <div
+                class="bg-red-200 p-2 rounded-2xl border-l-4 border-spacing-4 border-r-4 border-yellow-800"
+            >
+                A
+            </div>
+            <div
+                class="bg-green-200 p-2 rounded-2xl border-l-4 border-r-4 border-yellow-800"
+            >
+                B
+            </div>
+            <div
+                class="bg-blue-200 p-2 hover:ring-4 ring-purple-800 40 rounded-2xl border-l-4 border-r-4 border-yellow-800"
+            >
+                C
+            </div>
+        </div>
+        <div class="divide-y border-4 divide-light-blue-900 ...">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div></div>
+        </div>
     </body>
 </html>
