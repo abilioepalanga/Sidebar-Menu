@@ -1,0 +1,3 @@
+cd .\TailwindCss\
+npm run tw:watch 
+   
