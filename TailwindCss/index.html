@@ -6,41 +6,31 @@
         <link rel="stylesheet" href="./tailwind.css" />
     </head>
     <body>
-        <div class="p-4 m-4 border-2 border-blue-900">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            feugiat, nulla sed faucibus commodo, erat urna facilisis nisl, vel
-            lacinia quam justo vitae mauris. Suspendisse potenti. Nulla
-            facilisi. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. Donec mattis, turpis sed vehicula
-            tincidunt, arcu risus fermentum nisl, nec eleifend neque metus a
-            justo. Aenean eget elit in elit blandit interdum. Sed id semper
-            sapien. Praesent lobortis ultrices lectus, ac eleifend leo viverra
-            in. Integer tincidunt lacus eget nisl bibendum, id vehicula urna
-            fermentum. Etiam non dui neque.
-        </div>
-
-        <div class="p-4 m-4 flex space-x-4 border-b-4 border-red-800">
-            <div
-                class="bg-red-200 p-2 rounded-2xl border-l-4 border-spacing-4 border-r-4 border-yellow-800"
-            >
-                A
+        <div
+            class="max-w-sm mx-auto bg-purple-600 rounded-lg w-2/4 shadow-md overflow-hidden"
+        >
+            <img
+                src="img.png"
+                alt="Imagem do card"
+                class="w-full h-40 object-cover"
+            />
+            <div class="p-1">
+                <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                    Título do Card
+                </h2>
+                <p class="text-gray-600 text-sm mb-4">
+                    Aqui vai uma descrição breve do conteúdo deste card. Pode
+                    ser texto sobre um produto, serviço ou informação.
+                </p>
+                <div class="flex justify-center">
+                    <a
+                        href="#"
+                        class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                    >
+                        Saiba Mais
+                    </a>
+                </div>
             </div>
-            <div
-                class="bg-green-200 p-2 rounded-2xl border-l-4 border-r-4 border-yellow-800"
-            >
-                B
-            </div>
-            <div
-                class="bg-blue-200 p-2 hover:ring-4 ring-purple-800 40 rounded-2xl border-l-4 border-r-4 border-yellow-800"
-            >
-                C
-            </div>
-        </div>
-        <div class="divide-y border-4 divide-light-blue-900 ...">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div></div>
         </div>
     </body>
 </html>
