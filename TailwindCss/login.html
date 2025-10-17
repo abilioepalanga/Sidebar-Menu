@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./tailwind.css" />
+        <title>Login</title>
+    </head>
+    <body
+        class="bg-gray-300 flex items-center justify-center w-screen h-screen"
+    >
+        <div class="bg-slate-600 w-80 p-2 rounded-md shadow-md">
+            <h1 class="text-white text-lg font-bold mb-2 text-center">Login</h1>
+            <div class="mb-4 rounded-md shadow-sm gap-2 flex flex-col">
+                <label for="email" class="text-white mr-1 font-semibold"
+                    >E-mail</label
+                >
+                <input type="text" class="w-full rounded-sm h-7" />
+            </div>
+            <div class="mb-4 rounded-md shadow-sm gap-2 mt-6 flex flex-col">
+                <label for="password" class="text-white mr-1 font-semibold"
+                    >Senha</label
+                >
+                <input
+                    type="password"
+                    class="w-full ring-2 ring-slate-500 rounded-sm h-7"
+                />
+            </div>
+            <div class="">
+                <button class="bg-blue-500 text-white w-full py-2 px-4 rounded">
+                    Login
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
