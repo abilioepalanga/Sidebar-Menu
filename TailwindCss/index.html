@@ -6,29 +6,129 @@
         <link rel="stylesheet" href="./tailwind.css" />
     </head>
     <body>
+        <div class="container mx-auto px-4 py-8 bg-yellow-200">
+            <h6 class="font-bold">Componente Card</h6>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <div>
+                    <!-- Badge: Ativo -->
+                    <span
+                        class="inline-flex items-center bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded"
+                    >
+                        <span
+                            class="w-2 h-2 mr-1 bg-green-500 rounded-full animate-pulse"
+                        ></span>
+                        Ativo
+                    </span>
+
+                    <!-- Badge: Inativo -->
+                    <span
+                        class="inline-flex items-center bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded"
+                    >
+                        <span
+                            class="w-2 h-2 mr-1 bg-red-500 rounded-full"
+                        ></span>
+                        Inativo
+                    </span>
+
+                    <!-- Badge: Processando -->
+                    <span
+                        class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded"
+                    >
+                        <span
+                            class="w-2 h-2 mr-1 bg-yellow-500 rounded-full animate-spin"
+                        ></span>
+                        Processando
+                    </span>
+                </div>
+                <div
+                    class="text-sm bg-red-200 inline-flex px-1.5 py-0.5 text-red-700 font-medium text-center rounded-lg items-center"
+                >
+                    Inativo
+                </div>
+                <div class="bg-stone-500 mt-1 w-6/4 p-2 rounded mb-4">
+                    <div class="flex flex-row gap-36">
+                        <h4 class="font-semibold">Titulo do card</h4>
+                        <h4 class="font-semibold">Titulo Dropdown</h4>
+                    </div>
+                    <div class="flex flex-row gap-36">
+                        <input
+                            type="text"
+                            class="border rounded-md px-2 mt-1"
+                            placeholder="Digite algo..."
+                        />
+                        <div
+                            class="relative inline-block text-left focus-within:block group"
+                        >
+                            <!-- Botão -->
+                            <button
+                                class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none"
+                            >
+                                Menu ▼
+                            </button>
+
+                            <!-- Menu dropdown -->
+                            <div
+                                class="absolute right-0 z-10 mt-2 w-44 origin-top-right bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-focus-within:visible group-focus-within:opacity-100 transition-opacity"
+                            >
+                                <a
+                                    href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                    >Item 1</a
+                                >
+                                <a
+                                    href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                    >Item 2</a
+                                >
+                                <a
+                                    href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                    >Item 3</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                quidem distinctio error dignissimos voluptates, mollitia maxime
+                qui perspiciatis adipisci nesciunt alias incidunt quis officiis
+                commodi quibusdam! Quae voluptate dicta aspernatur.
+            </div>
+        </div>
+        <span
+            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
+        >
+            Novo
+        </span>
+
         <div
-            class="max-w-sm mx-auto bg-purple-600 rounded-lg w-2/4 shadow-md overflow-hidden"
+            class="max-w-56 mx-auto p-1 bg-slate-800 rounded-lg shadow-md overflow-hidden"
         >
             <img
+                class="w-full h-48 rounded-lg object-cover"
                 src="img.png"
                 alt="Imagem do card"
-                class="w-full h-40 object-cover"
             />
-            <div class="p-1">
-                <h2 class="text-xl font-semibold text-gray-800 mb-2">
+
+            <div class="p-2">
+                <h2 class="text-xl font-semibold text-gray-800">
                     Título do Card
                 </h2>
-                <p class="text-gray-600 text-sm mb-4">
-                    Aqui vai uma descrição breve do conteúdo deste card. Pode
-                    ser texto sobre um produto, serviço ou informação.
+                <p class="mt-0.5 text-gray-600">
+                    Esta é uma descrição simples do card. Você pode colocar
+                    qualquer texto aqui.
                 </p>
-                <div class="flex justify-center">
-                    <a
-                        href="#"
-                        class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                <div class="mt-2 sm:flex-col sm:gap-4 flex flex-row gap-2">
+                    <button
+                        class="mt-0.5 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-1 rounded-lg"
                     >
-                        Saiba Mais
-                    </a>
+                        Clique aqui
+                    </button>
+                    <button
+                        class="py-2 px-1 hover:bg-red-700 font-semibold bg-red-500 text-white rounded-lg"
+                    >
+                        Não Clique
+                    </button>
                 </div>
             </div>
         </div>
