@@ -6,22 +6,33 @@
         <link rel="stylesheet" href="./tailwind.css" />
         <title>Grid</title>
     </head>
+
     <body>
-        <div class="">
-            <header class="bg-blue-500 h-24 ">.header</header>
-            <main class="grid  grid-cols-3 gap-1">
-                <div class="w-44 bg-slate-700"> AAAA</div>
-                <section class=" flex max-w-[608px] ">
-                     <div class="bg-green-400 w-96 text-center -ml-60">.main-content</div>
-                     <div class="bg-purple-900 w-56 text-center">Sidebar</div>
-                          <div class="w-44 bg-slate-700"> AAAA</div>
-                </section>
-                <section class="flex col-start-2 -ml-60 gap-1">
-                    <div class="bg-red-400 w-44 col-start-2">.twin</div>
-                     <div class="bg-red-400 w-44 col-start-2">.twin</div>
-                </section>
-            
-            </main>
-            <footer class="bg-blue-700 h-24 col-span-4">.footer</footer>
+        <table class="table-auto border-2 border-collapse w-full mt-10">
+            <caption class="caption-top">
+                Table 3.1: Professional wrestlers and their signature moves.
+                <button>Ok</button>
+            </caption>
+            <thead>
+                <tr class="p-3 border-2 bg-green-300 overflow-auto">
+                    <th class="p-3">Wrestler</th>
+                    <th class="p-3">Signature Move(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-2 p-3">
+                    <td class="p-3">"Stone Cold" Steve Austin</td>
+                    <td class="p-3">Stone Cold Stunner, Lou Thesz Press</td>
+                </tr>
+                <tr class="border-2">
+                    <td class="p-3">Bret "The Hitman" Hart</td>
+                    <td class="p-3">The Sharpshooter</td>
+                </tr>
+                <tr class="border-2 p-3">
+                    <td class="p-3">Razor Ramon</td>
+                    <td class="p-3">Razor's Edge, Fallaway Slam</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
